@@ -31,4 +31,9 @@
         }
       }
     });
+    $('.primary-menu a').click(function(){
+      if($(window).width() < 480){
+         $('#site-navigation').slideUp();
+      }
+    });
 }(jQuery));
