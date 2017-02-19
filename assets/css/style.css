@@ -240,7 +240,9 @@ body:not(.home) #content-wrap {
 
 
 /* --------------------Navigation------------------- */
-
+#menu{
+    display: none;
+}
 .primary-menu {
     margin: 0;
     padding: 0;
@@ -251,8 +253,6 @@ body:not(.home) #content-wrap {
 }
 
 
-/* .btn,*/
-
 .primary-menu a {
     color: #fff;
     display: block;
@@ -262,9 +262,6 @@ body:not(.home) #content-wrap {
     perspective: 1000px;
     display: inline-block;
 }
-
-
-/* .btn span,*/
 
 .menu-item-name {
     position: relative;
@@ -282,8 +279,6 @@ body:not(.home) #content-wrap {
 }
 
 
-/* .btn span:before,*/
-
 .menu-item-name:before {
     position: absolute;
     top: 100%;
@@ -300,23 +295,11 @@ body:not(.home) #content-wrap {
     transform-origin: 50% 0;
 }
 
-
-/* .btn:hover span,*/
-
-
-/* .btn:focus span,*/
-
 .primary-menu a:hover span,
 .primary-menu a:focus span {
     -webkit-transform: rotateX(90deg) translateY(-22px);
     transform: rotateX(90deg) translateY(-22px);
 }
-
-
-/* .btn:hover span:before,*/
-
-
-/* .btn:focus span:before,*/
 
 .primary-menu a:hover span:before,
 .primary-menu a:focus span:before {
@@ -327,6 +310,7 @@ body:not(.home) #content-wrap {
     display: none;
 }
 
+/* Home */
 .container {
     padding-top: 80px;
 }
@@ -471,7 +455,7 @@ body:not(.home) #content-wrap {
 
 .home .type-projects .entry-content {
     position: absolute;
-    z-index: 4;
+    z-index: 2;
     background: #0b0100;
     width: 100%;
     padding: 10px 15px;
@@ -562,4 +546,77 @@ body:not(.home) #content-wrap {
 .site-info {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 600px){
+    .home .type-projects.projects{
+        float: none;
+        margin:35px auto auto auto;
+        display: table;
+        clear: both;
+        width: 100%;
+        max-width: 420px;
+    }
+}
+@media only screen and (max-width: 480px){
+    #menu {
+        cursor: pointer;
+        position: relative;
+        height: 17px;
+        display: block;
+    }
+    #menu span{
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        position: relative;
+    }
+    #menu span:first-child{
+        top:0;
+    }
+    #menu span:nth-child(2){
+        top:5px;
+    }
+    #menu span:last-child{
+        top:10px;
+    }
+    .site-header .row{
+        position: relative;
+    }
+    #site-navigation {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        background: #000;
+        z-index: 2;
+    }
+    .primary-menu a{
+        display: block;
+        text-align: left;
+        padding: 6px 5px;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        -webkit-perspective: none;
+                perspective: none;
+    }
+    .primary-menu a:hover span, 
+    .primary-menu a:focus span{
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        color: #ef4a51;
+    }
+    .primary-menu li{
+        display: block;
+    }
+    .menu-item-name{
+        display: block;
+    }
+    .menu-item-name:before{
+        content: none;
+    }
 }
