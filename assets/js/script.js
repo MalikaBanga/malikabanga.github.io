@@ -24,9 +24,11 @@
     });
 
     $('body').on('click', function(e) {
+      if($(window).width() > 480){
         if (!($(e.target).hasClass('navigation') ||
                 $(e.target).hasClass('mobile-menu') || $(e.target).parents().hasClass('navigation') || $(e.target).parents().hasClass('mobile-menu'))) {
             $('#site-navigation').slideUp();
         }
+      }
     });
 }(jQuery));
