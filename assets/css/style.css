@@ -96,7 +96,16 @@ button:focus,
 .btn-lg {
     font-size: 21px;
 }
-
+.menu-item .btn-white,
+.btn-white {
+    background: #Fff;
+    color: #000;
+}
+.menu-item .btn-white:hover,
+.btn-white:hover {
+    background: #000;
+    color: #fff;
+}
 pre {
     background: #f7f7f7;
     color: #000;
@@ -286,7 +295,6 @@ body:not(.home) #content-wrap {
     -ms-transform-origin: 50% 0;
     transform-origin: 50% 0;
 }
-
 .primary-menu a:hover span,
 .primary-menu a:focus span {
     -webkit-transform: rotateX(90deg) translateY(-22px);
@@ -395,7 +403,7 @@ body:not(.home) #content-wrap {
 }
 
 #work .entry-header p {
-    margin: 0;
+    margin-top: 0;
 }
 
 #work .entry-header {
