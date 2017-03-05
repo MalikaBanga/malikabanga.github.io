@@ -467,9 +467,9 @@ body:not(.home) #content-wrap {
     background: #0b0100;
     width: 100%;
     padding: 10px 15px;
-    -webkit-transform: translate(0, -43px);
-    -ms-transform: translate(0, -43px);
-    transform: translate(0, -43px);
+    -webkit-transform: translate(0, -39px);
+    -ms-transform: translate(0, -39px);
+    transform: translate(0, -39px);
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
