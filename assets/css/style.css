@@ -383,7 +383,12 @@ body:not(.home) #content-wrap {
     display: block;
     margin: 50px auto 20px;
 }
-
+#skills li{
+    float: left;
+    width: 49%;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
 #work {
     background: #ef4a51;
 }
